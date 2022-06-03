@@ -1,17 +1,11 @@
-console.log('hello');
+import './index.css';
+import Menu from './Menu';
 
-// function component() {
-//   const element = document.createElement('div');
-//  const btn = document.createElement('button');
+let myMenu = new Menu;
 
-//   // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+const root = document.createElement('div');
+root.id= 'root';
 
-//  btn.innerHTML = 'Click me and check the console!';
-// //  btn.onclick = printMe;
+root.appendChild(myMenu.displayMenu());
 
-//  element.appendChild(btn);
-
-//   return element;
-// }
-
-// document.body.appendChild(component());
+document.body.appendChild(root);
