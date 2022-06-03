@@ -64,7 +64,7 @@ export default class Menu {
     },
   ]}
 
-  displayMenu(){
+  render(){
     let menuContainer = createNewElement('div', null, 'menu-container');
 
     let menuTitle = createNewElement('h1', 'Menu');
